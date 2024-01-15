@@ -1,11 +1,11 @@
 # cryptoClustering
 Unsupervised Machine learning
 
-##Overview
+## Overview
 
 This GitHub project focuses on exploring and implementing K-Means clustering on cryptocurrency data. The goal is to find the optimal number of clusters (k) using both the original scaled data and Principal Component Analysis (PCA) data.
 
-###Getting Started
+### Getting Started
 
 **To begin, follow the steps outlined below:**
 
@@ -14,26 +14,27 @@ This GitHub project focuses on exploring and implementing K-Means clustering on 
 - Create a line chart visualizing inertia values for different k values.
 Answer the question: What is the best value for k? 
 
+
 ![Alt text](image.png)
 
-1. **Cluster Cryptocurrencies with K-means Using the Original Scaled Data:**
+2. **Cluster Cryptocurrencies with K-means Using the Original Scaled Data:**
 - Initialize and fit the K-means model with the best k value.
 - Predict clusters and create a scatter plot using hvPlot.
  Evaluate the impact of clustering on the original scaled data.
 
  ![Alt text](image-1.png)
 
-1. **Optimize Clusters with Principal Component Analysis (PCA):**
+3. **Optimize Clusters with Principal Component Analysis (PCA):**
 - Perform PCA on the original scaled DataFrame and reduce features to three principal components.
 - Determine the total explained variance of the three principal components.
 - Create a new DataFrame with PCA data.
 
-1. **Find the Best Value for k Using the PCA Data:**
+4. **Find the Best Value for k Using the PCA Data:**
 - Apply the elbow method on PCA data to identify the optimal k.
 - Visualize inertia values with a line chart.
 - Compare the best k value with that of the original data.
 
-1. **Cluster Cryptocurrencies with K-means Using the PCA Data:**
+5. **Cluster Cryptocurrencies with K-means Using the PCA Data:**
 - Initialize and fit the K-means model with the best k from PCA.
 - Predict clusters and create a scatter plot using hvPlot.
 - Evaluate the impact of using fewer features for clustering.
